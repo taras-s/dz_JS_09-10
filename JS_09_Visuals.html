@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS 9 Visual effectss with jQuery. by Taras Semeniuk</title>
+
+	<link rel="stylesheet" href="css/visuals.css">
+	<link rel="stylesheet" href="css/jcarousel.basic.css">
+	<link rel="stylesheet" href="css/jquery.selectbox.css">
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.jcarousel.js"></script>
+	<script src="js/jquery.color-2.1.2.js"></script>
+	<script src="js/visuals.js"></script>
+
+	<script src="js/jquery.selectbox-0.6.1.js"></script>
+
+
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost')
+	.split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</head>
+<body>
+
+<!-- ============================================================ Menu -->
+
+<nav>
+	<ul>
+		<li><a href="#">Nav 1</a></li>
+		<li><a href="#">Nav 2</a></li>
+		<li class="dropdown toplevel"><a href="#">Nav 3</a>
+			<ul class="sub-menu">
+				<li><a href="#">Nav 3.1</a></li>
+					<li class="dropdown"><a href="#">Nav 3.4</a>
+						<ul class="sub-menu">
+							<li><a href="#">Nav 3.4.1</a></li>
+								<li class="dropdown"><a href="#">Nav 3.4.2</a>
+								<ul class="sub-menu">
+									<li><a href="#">Nav 3.4.2.1</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				<li><a href="#">Nav 3.5</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<!-- ========================================================================== Carousel -->
+
+<div class="wrapper">
+
+	<h1>Carousel</h1>
+	<p>Basic carousel with prev/next controls and pagination.</p>
+
+	<div class="jcarousel-wrapper">
+		<div class="jcarousel">
+			<ul>
+				<li><img src="img/img1.jpg" height="400" alt=""></li>
+				<li><img src="img/img2.jpg" height="400" alt=""></li>
+				<li><img src="img/img3.jpg" height="400" alt=""></li>
+				<li><img src="img/img4.jpg" height="400" alt=""></li>
+				<li><img src="img/img5.jpg" height="400" alt=""></li>
+				<li><img src="img/img6.jpg" height="400" alt=""></li>
+				<li><img src="img/img7.jpg" height="400" alt=""></li>
+				<li><img src="img/img8.jpg" height="400" alt=""></li>
+				<li><img src="img/img9.jpg" height="400" alt=""></li>
+			</ul>
+		</div>
+
+		<p class="photo-credits">Photos by Taras Semeniuk</p>
+		<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+		<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+		<p class="jcarousel-pagination"></p>
+	</div>
+
+
+
+
+<!-- ============================================================= Dropdown Box -->
+
+	<select id="selbox">
+		<option value="--">Please select your favorite color</option>
+		<option value="01">Red</option>
+		<option value="02">Orange</option>
+		<option value="03">Yellow</option>
+		<option value="04">Green</option>
+		<option value="05">Blue</option>
+		<option value="06">Magenta</option>
+		<option value="07">Violet</option>
+		<option value="08">Ultra-violet</option>
+	</select>
+
+
+
+<span class="niceCheck"><input type="checkbox" name="ch1" /></span>
+
+
+
+
+
+</div>
+ </body></html>
